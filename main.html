@@ -3,41 +3,41 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
-	 <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
         .required::after {
-            content: '*';
+            content: ' *';
             color: red;
         }
-		 </style>
-	
+    </style>
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form method ="post">
+	<form method="post">
 		<div>
-			<label for="name">NAME:</label>
+			<label for="name" class="required">NAME:</label>
 			<input type="text" id="name" name="name" placeholder="name"required>
 		</div>
 		<br>
 		<div>
-			<label for="email">Email</label>
+			<label for="email" class="required">Email</label>
 			<input type="email" id="email" name="email" placeholder="email" required>
 		</div>
 		<br>
 		<div>
-			<span>Gender:</span>
-            <label for="gender_m">
-                <input type="radio" id="gender_m" name="gender" value="male" required> Male
-            </label>
-            <label for="gender_f">
-                <input type="radio" id="gender_f" name="gender" value="female" required> Female
-            </label>
-        </div>
-		<br>
+			<label class="required">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+		</div>
+<br>
 		<div>
 			<label for="laptop brands">laptop brands</label>
 			<select type="dropdown" id="laptop brands">
@@ -50,18 +50,18 @@
 		</div>
 		<br>
 		<div>
-			<label for="age">Age</label>
+			<label for="age"class="required">Age</label>
 			<input type ="number" id="age" name="age" placeholder="age" required>
 		</div>
 		<br>
 		<div>
-			<label for="date ">DOB</label>
+			<label for="date"class="required">DOB</label>
 			<input type="date" id="date" name ="DOB" placeholder="DOB"required>
 			
 		</div>
 		<br>
 		<div>
-			<label for="password">password</label>
+			<label for="password"class="required">password</label>
 			<input type ="password" id="password" name="password" placeholder="password"required>
 		</div>
 		<br>
