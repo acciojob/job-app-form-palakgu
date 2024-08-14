@@ -4,12 +4,76 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <style>
+        .required::after {
+            content: '*';
+            color: red;
+        }
+		 </style>
+	
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<form method ="post">
+		<div>
+			<label for="name">NAME:</label>
+			<input type="text" id="name" name="name" placeholder="name"required>
+		</div>
+		<br>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="email" required>
+		</div>
+		<br>
+		<div>
+			<span>Gender:</span>
+            <label for="gender_m">
+                <input type="radio" id="gender_m" name="gender" value="male" required> Male
+            </label>
+            <label for="gender_f">
+                <input type="radio" id="gender_f" name="gender" value="female" required> Female
+            </label>
+        </div>
+		<br>
+		<div>
+			<label for="laptop brands">laptop brands</label>
+			<select type="dropdown" id="laptop brands">
+				<option value="" disabled selected>--Please choose an option--</option>
+				<option value ="lenevo">lenevo</option>
+				<option value ="Asus">asus</option>
+				<option value ="MSI">MSI</option>
+				<option value ="ideapad">ideapad</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label for="age">Age</label>
+			<input type ="number" id="age" name="age" placeholder="age" required>
+		</div>
+		<br>
+		<div>
+			<label for="date ">DOB</label>
+			<input type="date" id="date" name ="DOB" placeholder="DOB"required>
+			
+		</div>
+		<br>
+		<div>
+			<label for="password">password</label>
+			<input type ="password" id="password" name="password" placeholder="password"required>
+		</div>
+		<br>
+		<div>
+			<label for="portfolio">portfolio</label>
+			<input typr="url" id="portfolio" name="portfolio" placeholder="portfolio">
+		</div>
+		<br>
+		<div>
+			<button type ="submit">submit</button>
+		</div>
+	</form>
 
 </body>
 
